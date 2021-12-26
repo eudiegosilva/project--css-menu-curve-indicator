@@ -13,7 +13,7 @@ export const Wrapper = styled.nav`
   justify-content: center;
   align-items: center;
   background-color: var(--white);
-  border-radius: 10px;
+  border-radius: 5px;
 `;
 
 export const List = styled.ul`
