@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 type ItemProps = {
   active?: boolean;
+  onClick?: () => void;
 };
 
 export const Wrapper = styled.nav`
@@ -52,29 +53,6 @@ export const ItemContent = styled.span`
   transform: translateY(20px);
 `;
 
-export const Item = styled.li<ItemProps>`
-  ${({ active }) => css`
-    position: relative;
-    list-style: none;
-    width: 70px;
-    height: 70px;
-    z-index: 30;
-
-    ${active &&
-    css`
-      ${ItemLink} {
-        div {
-          transform: translateY(-32px);
-        }
-      }
-      ${ItemContent} {
-        opacity: 1;
-        transform: translateY(10px);
-      }
-    `}
-  `}
-`;
-
 export const Indicator = styled.div`
   position: absolute;
   width: 70px;
@@ -107,4 +85,48 @@ export const Indicator = styled.div`
     border-top-left-radius: 20px;
     box-shadow: 0 -10px 0 0 var(--raisinBlack);
   }
+`;
+
+export const Item = styled.li<ItemProps>`
+  ${({ active }) => css`
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 30;
+
+    ${active &&
+    css`
+      ${ItemLink} {
+        div {
+          transform: translateY(-32px);
+        }
+      }
+
+      ${ItemContent} {
+        opacity: 1;
+        transform: translateY(10px);
+      }
+
+      &:nth-child(1) ~ ${Indicator} {
+        transform: translateX(calc(70px * 0));
+      }
+
+      &:nth-child(2) ~ ${Indicator} {
+        transform: translateX(calc(70px * 1));
+      }
+
+      &:nth-child(3) ~ ${Indicator} {
+        transform: translateX(calc(70px * 2));
+      }
+
+      &:nth-child(4) ~ ${Indicator} {
+        transform: translateX(calc(70px * 3));
+      }
+
+      &:nth-child(5) ~ ${Indicator} {
+        transform: translateX(calc(70px * 4));
+      }
+    `}
+  `}
 `;
