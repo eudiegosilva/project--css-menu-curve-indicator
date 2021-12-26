@@ -72,7 +72,7 @@ export const Indicator = styled.div`
     height: 20px;
     background-color: transparent;
     border-top-right-radius: 20px;
-    box-shadow: 0 -10px 0 0 var(--raisinBlack);
+    box-shadow: 1px -10px 0 0 var(--raisinBlack);
   }
   &::after {
     content: '';
@@ -83,7 +83,7 @@ export const Indicator = styled.div`
     height: 20px;
     background-color: transparent;
     border-top-left-radius: 20px;
-    box-shadow: 0 -10px 0 0 var(--raisinBlack);
+    box-shadow: -1px -10px 0 0 var(--raisinBlack);
   }
 `;
 
