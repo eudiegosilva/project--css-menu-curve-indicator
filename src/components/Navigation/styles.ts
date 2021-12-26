@@ -38,13 +38,13 @@ export const ItemLink = styled.a`
     font-size: 1.5em;
     text-align: center;
     transition: 0.5s;
-    color: var(--raisinBlack);
+    color: var(--black);
   }
 `;
 
 export const ItemContent = styled.span`
   position: absolute;
-  color: var(--raisinBlack);
+  color: var(--black);
   font-weight: 400;
   font-size: 0.75em;
   letter-spacing: 0.05em;
@@ -57,10 +57,10 @@ export const Indicator = styled.div`
   position: absolute;
   width: 70px;
   height: 70px;
-  background-color: var(--malachite);
+  background-color: var(--philippineYellow);
   top: -50%;
   border-radius: 50%;
-  border: 6px solid var(--raisinBlack);
+  border: 6px solid var(--black);
   transition: 0.5s;
 
   &::before {
@@ -72,7 +72,7 @@ export const Indicator = styled.div`
     height: 20px;
     background-color: transparent;
     border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 var(--raisinBlack);
+    box-shadow: 1px -10px 0 0 var(--black);
   }
   &::after {
     content: '';
@@ -83,7 +83,7 @@ export const Indicator = styled.div`
     height: 20px;
     background-color: transparent;
     border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 var(--raisinBlack);
+    box-shadow: -1px -10px 0 0 var(--black);
   }
 `;
 

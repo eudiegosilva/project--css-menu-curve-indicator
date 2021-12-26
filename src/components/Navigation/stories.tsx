@@ -1,6 +1,6 @@
-import { Story, Meta } from '@storybook/react/types-6-0';
+import { Meta } from '@storybook/react/types-6-0';
 
-import Navigation, { NavigationProps } from '.';
+import Navigation from '.';
 
 export default {
   title: 'Organism/Navigation',
@@ -10,6 +10,4 @@ export default {
   }
 } as Meta;
 
-export const NavigationDefault: Story<NavigationProps> = (args) => (
-  <Navigation {...args} />
-);
+export const NavigationDefault = () => <Navigation />;

@@ -75,8 +75,8 @@ const GlobalStyles: GlobalStyleComponent<
   
   :root {
     --white: #ffffff;
-    --raisinBlack: #222327;
-    --malachite: #29fd53;
+    --black: #000000;
+    --philippineYellow: #ffcb00;
   }
 
   html {
@@ -92,7 +92,7 @@ const GlobalStyles: GlobalStyleComponent<
   body {
     font-size: ${({ theme }) => theme.font.sizes.default};
     font-weight: 300;
-    background-color: var(--raisinBlack);
+    background-color: var(--black);
   }
 `;
 

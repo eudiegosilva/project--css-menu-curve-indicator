@@ -10,9 +10,6 @@ import {
 
 import * as s from './styles';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type NavigationProps = any;
-
 const Navigation = () => {
   const [activeLink, setActiveLink] = useState('home');
 
@@ -27,45 +24,45 @@ const Navigation = () => {
           active={activeLink === 'home'}
           onClick={() => handleActive('home')}
         >
-          <s.ItemLink href="#">
+          <s.ItemLink>
             <HouseIcon />
-            <s.ItemContent>Home</s.ItemContent>
+            <s.ItemContent>home</s.ItemContent>
           </s.ItemLink>
         </s.Item>
         <s.Item
           active={activeLink === 'profile'}
           onClick={() => handleActive('profile')}
         >
-          <s.ItemLink href="#">
+          <s.ItemLink>
             <PeopleIcon />
-            <s.ItemContent>Profile</s.ItemContent>
+            <s.ItemContent>profile</s.ItemContent>
           </s.ItemLink>
         </s.Item>
         <s.Item
           active={activeLink === 'message'}
           onClick={() => handleActive('message')}
         >
-          <s.ItemLink href="#">
+          <s.ItemLink>
             <MessageIcon />
-            <s.ItemContent>Message</s.ItemContent>
+            <s.ItemContent>message</s.ItemContent>
           </s.ItemLink>
         </s.Item>
         <s.Item
           active={activeLink === 'photos'}
           onClick={() => handleActive('photos')}
         >
-          <s.ItemLink href="#">
+          <s.ItemLink>
             <CameraIcon />
-            <s.ItemContent>Photos</s.ItemContent>
+            <s.ItemContent>photos</s.ItemContent>
           </s.ItemLink>
         </s.Item>
         <s.Item
           active={activeLink === 'settings'}
           onClick={() => handleActive('settings')}
         >
-          <s.ItemLink href="#">
+          <s.ItemLink>
             <GearIcon />
-            <s.ItemContent>Settings</s.ItemContent>
+            <s.ItemContent>settings</s.ItemContent>
           </s.ItemLink>
         </s.Item>
         <s.Indicator></s.Indicator>
