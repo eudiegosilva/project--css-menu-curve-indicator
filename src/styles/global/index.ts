@@ -73,6 +73,12 @@ const GlobalStyles: GlobalStyleComponent<
     src: local('JetBrains Mono Extra Bold'), local('JetBrains-Mono-Extra-Bold'), url('/fonts/jetbrainsmono-extrabold.ttf') format('truetype');
   }
   
+  :root {
+    --white: #ffffff;
+    --raisinBlack: #222327;
+    --malachite: #29fd53;
+  }
+
   html {
     font-size: 50%;
   }
@@ -86,6 +92,7 @@ const GlobalStyles: GlobalStyleComponent<
   body {
     font-size: ${({ theme }) => theme.font.sizes.default};
     font-weight: 300;
+    background-color: var(--raisinBlack);
   }
 `;
 

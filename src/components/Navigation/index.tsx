@@ -5,6 +5,7 @@ import {
   CameraIcon,
   GearIcon
 } from 'assets/icons';
+
 import * as s from './styles';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -13,7 +14,7 @@ export type NavigationProps = any;
 const Navigation = () => (
   <s.Wrapper aria-label="Navigation component">
     <s.List>
-      <s.Item>
+      <s.Item active>
         <s.ItemLink href="#">
           <HouseIcon />
           <s.ItemContent>Home</s.ItemContent>
@@ -43,6 +44,7 @@ const Navigation = () => (
           <s.ItemContent>Settings</s.ItemContent>
         </s.ItemLink>
       </s.Item>
+      <s.Indicator></s.Indicator>
     </s.List>
   </s.Wrapper>
 );
